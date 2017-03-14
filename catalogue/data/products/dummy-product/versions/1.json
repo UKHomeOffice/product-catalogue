@@ -1,0 +1,51 @@
+{
+    "attributes": {
+        "identityRequired": {
+            "evidenceKinds": [
+                {
+                    "mandatory": true, 
+                    "reference": "passportPhoto", 
+                    "specified": false
+                }
+            ], 
+            "facet": "identity", 
+            "label": "", 
+            "referenceText": "", 
+            "referenceUrl": "", 
+            "relatedProducts": [], 
+            "value": true
+        }, 
+        "timeScaleInDays": {
+            "evidenceKinds": [], 
+            "facet": "commercial", 
+            "label": "", 
+            "referenceText": "", 
+            "referenceUrl": "", 
+            "relatedProducts": [], 
+            "value": 5
+        },
+        "fee": {
+            "evidenceKinds": [],
+            "facet": "commercial",
+            "label": "",
+            "referenceText": "",
+            "referenceUrl": "",
+            "relatedProducts": [],
+            "value": 10.0
+        }
+    }, 
+    "description": "Dummy product",
+    "serviceAddOns": [
+        {
+            "cost": 200.0,
+            "description": "Same day service",
+            "duration": 1, 
+            "name": "same-day-service",
+            "title": "Same Day Service"
+        }
+    ], 
+    "tags": [
+        ""
+    ], 
+    "title": "Dummy product"
+}

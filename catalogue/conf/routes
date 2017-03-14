@@ -1,0 +1,32 @@
+# Product routes
+GET           /product/:name                                 @cjp.catalogue.resource.ProductResource.getLatest(name: String)
+GET           /product/:name/draft                           @cjp.catalogue.resource.ProductResource.getDraft(name: String)
+GET           /product/:name/effectiveAt/:effectiveAt        @cjp.catalogue.resource.ProductResource.getEffectiveAt(name: String, effectiveAt: String)
+
+# Manage attributes routes
+GET           /manage/attribute                              @cjp.catalogue.resource.AttributeResource.getSummaries
+
+# Manage AddOn routes
+GET           /manage/addons                                 @cjp.catalogue.resource.AddOnsResource.getAddOns
+
+# Manage product routes
+GET           /manage/product                                @cjp.catalogue.resource.ManageProductResource.getSummaries
+GET           /manage/product/tags                           @cjp.catalogue.resource.ManageProductResource.getTags
+GET           /manage/product/:name                          @cjp.catalogue.resource.ManageProductResource.getCurrent(name: String)
+GET           /manage/product/draft/:name                    @cjp.catalogue.resource.ManageProductResource.getDraft(name: String)
+DELETE        /manage/product/draft/:name                    @cjp.catalogue.resource.ManageProductResource.deleteDraft(name: String)
+POST          /manage/product                                @cjp.catalogue.resource.ManageProductResource.create
+POST          /manage/product/clone/:name                    @cjp.catalogue.resource.ManageProductResource.cloneProduct(name: String)
+PUT           /manage/product/:name                          @cjp.catalogue.resource.ManageProductResource.update(name: String)
+
+# Manage effective date routes
+GET           /manage/effectiveDate                          @cjp.catalogue.resource.EffectiveDateResource.getEffectiveDate
+PUT           /manage/effectiveDate                          @cjp.catalogue.resource.EffectiveDateResource.setEffectiveDate
+DELETE        /manage/effectiveDate                          @cjp.catalogue.resource.EffectiveDateResource.resetEffectiveDate
+
+GET           /healthcheck                                   @cjp.catalogue.resource.HealthCheckResource.healthCheck
+GET           /ping                                          @cjp.catalogue.resource.HealthCheckResource.ping
+
+#export import
+GET           /manage/export                                 @cjp.catalogue.resource.ExportImportResource.export
+PUT           /manage/import                                 @cjp.catalogue.resource.ExportImportResource.importCatalogue

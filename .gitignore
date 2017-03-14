@@ -1,0 +1,30 @@
+target
+.idea
+.idea_modules
+
+sbt-launch.jar
+
+endtoend/scala-sbt - Chrome.bat
+endtoend/scala-sbt - Firefox.bat
+endtoend/scala-sbt - IE.bat
+endtoend/scala-sbt.bat
+.DS_Store
+.project
+admin/atlassian-ide-plugin.xml
+application/atlassian-ide-plugin.xml
+application/cjp-application/cjp-application.iml
+atlassian-ide-plugin.xml
+customer/atlassian-ide-plugin.xml
+endtoend/atlassian-ide-plugin.xml
+homeoffice-cjp.iml
+test.sh
+.#.*
+*~
+\#*\#
+.\#*
+
+.sass-cache/
+node_modules/
+.grunt
+_SpecRunner.html
+catalogue_import.json

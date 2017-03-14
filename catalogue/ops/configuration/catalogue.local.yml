@@ -1,0 +1,11 @@
+mongodb:
+  hosts: "localhost:27017"
+  db: "cataloguedb"
+
+http:
+ port: 3000
+ adminPort: 3002
+
+buildInfoFile: ops/configuration/build-info.yaml
+
+enableTimemachine: true

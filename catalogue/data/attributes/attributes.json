@@ -1,0 +1,31 @@
+[
+    {
+        "evidenceKinds": [],
+        "facet": "commercial",
+        "hasRelatedProducts": false,
+        "kind": "Decimal",
+        "label": "How much does this product cost (in GBP)?",
+        "name": "fee",
+        "validValues": {}
+    },
+    {
+        "evidenceKinds": [],
+        "facet": "commercial",
+        "hasRelatedProducts": false,
+        "kind": "Integer",
+        "label": "How long will it take for me to get this product (in working days)?",
+        "name": "timeScaleInDays",
+        "validValues": {}
+    },
+    {
+        "evidenceKinds": [
+            "passportPhoto"
+        ],
+        "facet": "identity",
+        "hasRelatedProducts": false,
+        "kind": "Boolean",
+        "label": "Does [the applicant] need to assert their identity?",
+        "name": "identityRequired",
+        "validValues": {}
+    }
+]
