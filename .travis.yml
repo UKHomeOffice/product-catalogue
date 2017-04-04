@@ -1,0 +1,10 @@
+language: scala
+services: mongodb
+jdk:
+  - oraclejdk8
+scala:
+  - 2.10.4
+before_install: unset SBT_OPTS JVM_OPTS
+script:
+  - cd catalogue
+  - ./bin/activator clean compile test
